@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PartDroidForms.FindPartPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1171F0">
+            <Label Text="PART MANAGER"
+                VerticalOptions="Start" 
+                   Margin="10"
+                   FontSize="20"
+                   TextColor="White"
+                HorizontalOptions="Center" />
+            <Entry Placeholder="Enter Part Number" x:Name="FindPartNumber"  Margin="20,0,20,0" 
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   ReturnType="Search"
+                   Keyboard="Numeric"
+                   />
+            <Button x:Name="SearchButton" VerticalOptions="Start"
+                    Margin="20,0,20,0" Text="Search"
+                    Clicked="SearchButton_Clicked"/>
+            <Label x:Name="PartID" Margin="20,0,20,0" TextColor="White" FontSize="Medium"/>
+            <Label x:Name="DesriptionText" Margin="20,0,20,0" TextColor="White"/>
+            <Label x:Name="partNumber" Margin="20,0,20,0" TextColor="White" />
+            <Label x:Name="location" Margin="20,0,20,0" TextColor="White" />
+            <Label x:Name="Stocklevel" Margin="20,0,20,0" TextColor="White" />
+            <StackLayout VerticalOptions="EndAndExpand" Spacing="0" Margin="10">
+            <Button x:Name="PullStockButton" Margin="40,0,40,0" Text="Set Stock Level" />
+            <Button x:Name="SetStockLevelButton" Margin="40,0,40,0" Text="Pull Part From Stock" />
+                <Button x:Name="PrintlabelButton" Margin="40,0,40,0" Text="Print Label" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com"
+
+             mc:Ignorable="d"
+             x:Class="PartDroidForms.ScanPage">
+    <ContentPage.Content >
+        <StackLayout BackgroundColor="CornflowerBlue">
+            <Label Text="Scan Choices"
+                VerticalOptions="Start" FontSize="Large" Margin="20" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Get Info"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                WidthRequest="200"
+                Clicked="ReturnInfo"/>
+            <Button Text="Set Stock Level"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                   Clicked="SetStockLevel"
+                />
+                    
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
