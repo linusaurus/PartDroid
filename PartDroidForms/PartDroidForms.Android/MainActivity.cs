@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Acr.UserDialogs;
 
 namespace PartDroidForms.Droid
 {
@@ -22,9 +23,9 @@ namespace PartDroidForms.Droid
 
             base.OnCreate(bundle);
             // Popup Dialog Extension  
-            Rg.Plugins.Popup.Popup.Init(this, bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
             ZXing.Net.Mobile.Forms.Android.Platform.Init();
+            UserDialogs.Init(this);
             formsApp = new App();
 
             LoadApplication(formsApp);
@@ -37,14 +38,7 @@ namespace PartDroidForms.Droid
 
         public override void OnBackPressed()
         {
-            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
-            {
-                // Do something if there are some pages in the `PopupStack`
-            }
-            else
-            {
-                // Do something if there are not any pages in the `PopupStack`
-            }
+           
         }
 
         [Java.Interop.Export("UITestBackdoorScan")]

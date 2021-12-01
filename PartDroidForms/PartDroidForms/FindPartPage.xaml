@@ -13,23 +13,25 @@
                    FontSize="20"
                    TextColor="White"
                 HorizontalOptions="Center" />
-            <Entry Placeholder="Enter Part Number" x:Name="FindPartNumber"  Margin="20,0,20,0" 
+            <Entry Placeholder="Enter Part Number" x:Name="FindPartNumber"  Margin="80,0,80,0" 
                    TextColor="White"
                    HorizontalTextAlignment="Center"
                    ReturnType="Search"
                    Keyboard="Numeric"
                    />
             <Button x:Name="SearchButton" VerticalOptions="Start"
-                    Margin="20,0,20,0" Text="Search"
+                    Margin="80,0,80,0" Text="Search"
                     Clicked="SearchButton_Clicked"/>
-            <Label x:Name="PartID" Margin="20,0,20,0" TextColor="White" FontSize="Medium"/>
+            <Label x:Name="PartID" Margin="20,10,20,0" TextColor="White" FontSize="Medium"/>
             <Label x:Name="DesriptionText" Margin="20,0,20,0" TextColor="White"/>
             <Label x:Name="partNumber" Margin="20,0,20,0" TextColor="White" />
             <Label x:Name="location" Margin="20,0,20,0" TextColor="White" />
             <Label x:Name="Stocklevel" Margin="20,0,20,0" TextColor="White" />
-            <StackLayout VerticalOptions="EndAndExpand" Spacing="0" Margin="10">
-            <Button x:Name="PullStockButton" Margin="40,0,40,0" Text="Set Stock Level" />
-            <Button x:Name="SetStockLevelButton" Margin="40,0,40,0" Text="Pull Part From Stock" />
+            <StackLayout VerticalOptions="EndAndExpand" Spacing="0" Margin="20">
+                <Button x:Name="SetStockLevelButton" Margin="40,0,40,0" Text="Pull Part From Stock" 
+                    Clicked="ShowPullEntryDialog"/>
+                <Button x:Name="PullStockButton" Margin="40,0,40,0" Text="Set Stock Level" />
+ 
                 <Button x:Name="PrintlabelButton" Margin="40,0,40,0" Text="Print Label" />
             </StackLayout>
         </StackLayout>

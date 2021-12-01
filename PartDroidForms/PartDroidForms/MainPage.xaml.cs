@@ -1,13 +1,6 @@
-﻿using Android.Support.V7.App;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using Xamarin.Forms;
-using ZXing.Mobile;
 using ZXing.Net.Mobile.Forms;
-using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
 namespace PartDroidForms
 {
@@ -18,7 +11,6 @@ namespace PartDroidForms
         public MainPage()
         {
             InitializeComponent();
-
         }
 
         private async void ShowInfo(object sender, EventArgs e)
