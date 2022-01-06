@@ -12,9 +12,6 @@ namespace PartDroidForms
         public IContainer Bootstrap()
         {
             var builder = new ContainerBuilder();
-            
-            
-            
 
             return builder.Build();
         }

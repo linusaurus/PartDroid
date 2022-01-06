@@ -27,12 +27,13 @@
             <Label x:Name="partNumber" Margin="20,0,20,0" TextColor="White" />
             <Label x:Name="location" Margin="20,0,20,0" TextColor="White" />
             <Label x:Name="Stocklevel" Margin="20,0,20,0" TextColor="White" />
+            <Label x:Name="Unit" Margin="20,0,20,0" TextColor="White" />
             <StackLayout VerticalOptions="EndAndExpand" Spacing="0" Margin="20">
-                <Button x:Name="SetStockLevelButton" Margin="40,0,40,0" Text="Pull Part From Stock" 
-                    Clicked="ShowPullEntryDialog"/>
-                <Button x:Name="PullStockButton" Margin="40,0,40,0" Text="Set Stock Level" />
- 
-                <Button x:Name="PrintlabelButton" Margin="40,0,40,0" Text="Print Label" />
+                <Button x:Name="PullParts" Margin="40,0,40,0" Text="Pull Part From Stock" 
+                    Clicked="PullEntry"/>
+                <Button x:Name="SetStockButton" Margin="40,0,40,0" Text="Set Stock Level"
+                        Clicked="SetStock"/>
+                <Button x:Name="PrintlabelButton" Margin="40,0,40,0" Text="Print Label" IsEnabled="False" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

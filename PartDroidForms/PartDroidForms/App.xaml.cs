@@ -9,14 +9,16 @@ namespace PartDroidForms
 {
     public partial class App : Application
     {
+       public static bool IsUserLoggedIn { get; internal set; }
+
         public App()
         {
            InitializeComponent();
-            //MainPage = new NavigationPage(new HomePage());
+   
             Bootstrapper bootstrapper = new Bootstrapper();
             bootstrapper.Bootstrap();
-           MainPage = new NavigationPage(new MainPage());
-
+            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new LoginPage());
         }
 
        
